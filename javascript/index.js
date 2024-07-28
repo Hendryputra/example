@@ -1,6 +1,6 @@
 import WebSocket from "ws";
 const socket = new WebSocket("wss://stream.aisstream.io/v0/stream");
-const API_KEY = process.env.AISSTREAM_API_KEY; # Would need to be established first
+const API_KEY = "96113e8bc1799c822619b94eb891ad4bee60ced5";
 socket.addEventListener("open", (_) => {
   const subscriptionMessage = {
     APIkey: API_KEY,
